@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background:#fd4a2b;
+    color:black;
+    font-family: 'Lexend';
+}
+
+.logo{
+    font-weight:800;
+    font-size:3vw;
+    letter-spacing:2px;
+    color: #fff;
+    font-family: 'Lexend';
+}
+
+section{
+    width:100%;
+    position:relative;
+}
+
+.navbar{
+    background: #fd4a2b;
+    width:100%;
+    position:fixed;
+    display:flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding:1.2vw 6vw;
+    z-index: 1000;
+}
+
+
+.menuitems{
+    display:flex;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuitems li{
+    list-style: none;
+    margin:0 1.5vw;    
+}
+
+.menuitems li a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    letter-spacing: 4px;
+    font-size: 1.5vw;
+}
+
+.menuitems li:hover a{
+    color:black;
+}
+ 
+
+.container{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.text_container{
+    width:50%;
+    padding-left:5rem;
+    padding-top:5rem;
+}
+
+.text_container h2{
+    font-size:10vh;
+    font-weight:900;
+    line-height:10vh;
+    text-transform:capitalize;
+}
+
+.text_container h2::first-line{
+    color:white;
+}
+
+.text_container h5{
+    color:white;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 10vh;
+    text-transform:capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text_container p{
+    font-size:1vw;
+    font-weight: 400;
+    color:white;
+    margin-top:30px;
+}
+
+.btn{
+    color:#222;
+    background-color: #fff;
+    margin-top:2vw;
+    font-size: 1.5vw;
+    border:white;
+    text-decoration: none;
+    padding: 6px 15px;
+    display: inline-block;
+}
+
+.btn:hover{
+    color:#222;
+    background-color: #fff;
+    margin-top:2vw;
+    font-size: 1.5vw;
+    border:white;
+    text-decoration: none;
+    padding: 6px 15px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.image-container{
+    display: flex;
+    width:50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+}
+
+.imgbox{
+    position:relative;
+    min-height: 70vh;
+    margin-right: 10vw;
+    z-index: 1000;
+}
+
+.imgbox img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+
+.icons{
+    position:fixed;
+    top:50%;
+    z-index:1000;
+    right:-13vw;
+    transform: translateY(-50%);
+    
+}
+
+.icons .fa-brands{
+    background-color: white;
+    width:16vw;
+    padding:0.5vw; 
+    font-size:2vw;
+    cursor:pointer; 
+    transition:ease 0.5s;
+}
+
+.icons .fa-brands:hover{   
+    transform: translatex(-13vw);
+}
+
+.icons .fa-brands span{
+    position:relative;
+    font-size:1.8vw;
+    margin-left:1vw;
+}
+
+.animblob{
+
+    position:absolute;
+    top:50%;
+    left:40%;
+    height:30vw;
+    width:30vw;
+    transform: translate(-50%,-50%);
+    background:#fff;
+    animation:animate_blob 8s linear infinite;
+}
+
+@keyframes animate_blob{
+    0%,100%{
+        border-radius: 45% 55% 70% 35% / 70% 30% 90% 40%;
+    }
+    25%{
+        border-radius: 55% 65% 90% 35% / 80% 30% 90% 60%;
+    }
+    50%{
+    border-radius: 65% 55% 90% 35% / 40% 80% 20% 70%;
+    }
+    25%{
+        border-radius: 35% 65% 90% 71% / 85% 23% 91% 4%;
+    }
+}
